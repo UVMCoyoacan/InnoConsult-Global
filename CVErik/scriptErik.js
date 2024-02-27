@@ -38,10 +38,15 @@ function mostrarFormulario() {
       <form id="registroForm"> <!-- Agregamos un ID al formulario -->
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br><br>
+        
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
-        <!-- Agrega más campos según tus necesidades -->
+        
+        <label for:"edad">Edad:</label>
+        <input type="text" id="edad" name="edad" required><br><br>
+
         <input type="submit" value="Enviar">
+
       </form>
     </div>
     `;
