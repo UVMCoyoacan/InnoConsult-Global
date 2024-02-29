@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4d5d5;
+    color: #333;
+}
+
+header {
+    background-color: #000490;
+    margin: 50px;
+    padding: 20px;
+    border-style: outset;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    border-radius: 50%;  /*Añade un borde redondeado a la imagen */
+    border-style: groove;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-style: outset;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#link{
+    text-align: center;
+}
+section img {
+    /* Estilos específicos para la imagen del encabezado */
+    border-radius: 50%;  /* Hace que la imagen sea circular */
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centra la imagen usando margen */
+}
+
+h2 {
+    color: #007BFF;
+}
+
+h3 {
+    color: #333;
+}
+
+ol {
+    padding: 0;
+    list-style-position: inside;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos para las secciones que contienen certificaciones */
+#certifications {
+    background-color: #f0f0f0;
+}
+
+#certifications h3 {
+    color: #007BFF;
+}
