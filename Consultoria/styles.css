@@ -1,12 +1,11 @@
 /* styles.css */
 
+/* Estilos generales */
 body {
-    font-family: "Arial", sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f2f2f2;
-    color: #333;
 }
 
 header {
@@ -18,12 +17,10 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 36px;
 }
 
 header p {
     margin: 10px 0 0;
-    font-size: 18px;
 }
 
 nav {
@@ -37,23 +34,17 @@ nav a {
     text-decoration: none;
     color: #555;
     font-weight: bold;
-    font-size: 18px;
 }
 
 section {
     padding: 20px;
+    border-bottom: 1px solid #ccc;
 }
 
 h2 {
     margin-top: 0;
     font-size: 24px;
     color: #333;
-}
-
-h3 {
-    margin-top: 0;
-    font-size: 20px;
-    color: #555;
 }
 
 p {
@@ -66,18 +57,24 @@ ul {
     padding: 0;
 }
 
+/* Estilos para las biografías */
 .Biographys {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.Biographys > div {
-    width: 45%;
+.Biographys .author {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+}
+
+.Biographys .author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .Biographys h3 {
@@ -93,29 +90,5 @@ ul {
 
 #contact p {
     margin-bottom: 10px;
-    font-size: 16px;
-}
-
-
-.Biographys .author {
-    display: flex;
-    align-items: center;
-}
-
-.Biographys .author img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.Biographys h3 {
-    margin-top: 0;
-    font-size: 20px;
-    color: #333;
-}
-
-.Biographys p {
-    margin-bottom: 0;
     font-size: 16px;
 }
