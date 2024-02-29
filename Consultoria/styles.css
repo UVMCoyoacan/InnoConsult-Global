@@ -56,39 +56,37 @@ ul {
     list-style-type: none;
     padding: 0;
 }
-
-/* Estilos para las biografías */
 .Biographys {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.Biographys .author {
+.author {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.Biographys .author img {
-    width: 40px;
-    height: 40px;
+.avatar {
+    width: 100px; /* Modifica el tamaño según sea necesario */
+    height: 100px; /* Modifica el tamaño según sea necesario */
     border-radius: 50%;
     margin-right: 20px;
 }
 
-.Biographys h3 {
+.author-info {
+    margin-left: 20px;
+}
+
+.author-info h3 {
     margin-top: 0;
     font-size: 20px;
+    font-weight: bold;
     color: #333;
 }
 
-.Biographys p {
+.author-info p {
     margin-bottom: 0;
-    font-size: 16px;
-}
-
-#contact p {
-    margin-bottom: 10px;
     font-size: 16px;
 }
