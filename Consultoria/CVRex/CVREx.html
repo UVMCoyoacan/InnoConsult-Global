@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+    <link rel="stylesheet" href="styles_1Rex.css">
+    <link rel="stylesheet" href="styles_2Rex.css">
+    <link rel="stylesheet" href="stylesRex.css">
+</head>
+
+<body>
+    <header>
+        <h1> David Rex Nava García</h1>
+    </header>
+    <main>
+        <section id="experiencia">
+            <p>Experiencia</p>
+            <ul>
+                <li>Peñafiel</li>
+                <li>Teleperformance</li>
+                <li>Marriott</li>
+            </ul>>
+        </section>
+
+        <section id="estudios">
+            <p>Ingeniería en Sistemas Computacionales - UVM</p>
+            <ul>
+                <li>Bachillerato UVM</li>
+                <li>Prueba 2</li>
+                <li>Prueba 3</li>
+            </ul>
+        </section>
+
+        <section id="imagen">
+            <img src="Images/RexImg.jpeg" onclick="fondoParrafos()">
+        </section>
+
+        <section id="botonRegistro">
+            <button class="registro" id="MostrarFormulario">Deja tus datos</button>
+            
+            <div id="ContainterFormulario"></div>
+            <div id="datosRegistrados"></div>
+        </section>
+    </main>
+    <footer>
+        <a href="#" onclick="noStyles()">Sin Estilos</a> |
+        <a href="#" onclick="activarStyles(0)">Estilo 1</a> |
+        <a href="#" onclick="activarStyles(1)">Estilo 2</a> |
+        <a href="#" onclick="activarStyles(2)">Estilo 3</a>
+    </footer>
+    <script src="scriptRex.js"></script>
+</body>
+
+</html>
