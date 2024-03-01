@@ -1,73 +1,44 @@
-function saludo() {
-    alert("HOLAAA");
-}
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtener elementos del DOM
+    const registrationFormSection = document.getElementById("registration-form");
+    const showRegistrationBtn = document.getElementById("show-registration-btn");
+    const registeredDataSection = document.getElementById("registered-data");
+    const displayNombre = document.getElementById("display-nombre");
+    const displayApellidoP = document.getElementById("display-apellidoP");
+    const displayApellidoM = document.getElementById("display-apellidoM");
+    const displayCorreo = document.getElementById("display-correo");
+    const displayTelefono = document.getElementById("display-telefono");
 
-function numeracion(n) {
-    for (i = 1; i <= n; i++) { // Ajustado el límite de la iteración
-        alert(i);
-    }
-}
+    // Agregar evento al botón para mostrar el formulario
+    showRegistrationBtn.addEventListener("click", function() {
+        registrationFormSection.style.display = "block";
+        registeredDataSection.style.display = "none"; // Oculta la sección de datos registrados
+    });
 
-function fondoParrafos() {
-    var parrafos = document.getElementsByTagName("p");
-    parrafos[0].innerHTML = "REEMPLAZADO";
-    parrafos[1].style.color = "blue"; // Ajustada la asignación del estilo
-    var listItems = document.getElementsByTagName("li"); // Cambiado a listItems para evitar redefinición de la variable
-    listItems[0].style.color = "red"; // Ajustado a listItems
-    listItems[1].style.color = "green"; // Ajustado a listItems
-    listItems[2].style.color = "blue"; // Ajustado a listItems
-}
+    // Agregar evento al formulario para prevenir el envío por defecto
+    const registrationForm = document.getElementById("registration-form");
+    registrationForm.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-function noStyles() {
-    var numStylesheets = document.styleSheets.length;
-    for (var i = 0; i < numStylesheets; i++) {
-        document.styleSheets[i].disabled = true;
-    }
-}
+        // Obtener los valores de los campos del formulario
+        const nombre = document.getElementById("nombre").value;
+        const apellidoP = document.getElementById("apellidoP").value;
+        const apellidoM = document.getElementById("apellidoM").value;
+        const correo = document.getElementById("correo").value;
+        const telefono = document.getElementById("telefono").value;
 
-function activarStyles(n) {
-    noStyles();
-    document.styleSheets[n].disabled = false;
-}
+        // Mostrar datos registrados en la otra sección
+        displayNombre.textContent = "Nombre: " + nombre;
+        displayApellidoP.textContent = "Apellido Paterno: " + apellidoP;
+        displayApellidoM.textContent = "Apellido Materno: " + apellidoM;
+        displayCorreo.textContent = "Correo: " + correo;
+        displayTelefono.textContent = "Teléfono: " + telefono;
 
-function mostrarFormulario() {
-    var containerFormulario = document.getElementById('ContainterFormulario'); // Corregido el ID
-    containerFormulario.innerHTML = `
-    <div id="formularioRegistro">
-      <h2>Registro</h2>
-      <form id="registroForm"> <!-- Agregamos un ID al formulario -->
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for:"edad">Edad:</label>
-        <input type="text" id="edad" name="edad" required><br><br>
+        // Mostrar la sección de datos registrados y ocultar el formulario
+        registeredDataSection.style.display = "block";
+        registrationFormSection.style.display = "none";
 
-        <input type="submit" value="Enviar">
-
-      </form>
-    </div>
-    `;
-    // Agregamos el evento de envío al formulario
-    document.getElementById('registroForm').addEventListener('submit', mostrarDatosRegistrados);
-}
-
-document.getElementById('MostrarFormulario').addEventListener('click', mostrarFormulario); // Ajustado el ID del botón
-
-function mostrarDatosRegistrados(event) {
-    event.preventDefault(); // Prevenimos el envío del formulario para manejarlo manualmente
-    
-    // Capturamos los valores de los campos del formulario
-    var nombre = document.getElementById('nombre').value;
-    var email = document.getElementById('email').value;
-    
-    // Mostramos los datos capturados en algún lugar de la página
-    var datosRegistrados = document.getElementById('datosRegistrados');
-    datosRegistrados.innerHTML = `
-    <h2>Datos Registrados:</h2>
-    <p>Nombre: ${nombre}</p>
-    <p>Email: ${email}</p>
-    `;
-}
+        // Limpiar campos del formulario
+        registrationForm.reset();
+    });
+});

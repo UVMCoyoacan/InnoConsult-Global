@@ -1,70 +1,73 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #e4d5d5;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #59464d;
+    margin: 50px;
+    padding: 20px;
+    border-style: outset;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
 
-
-section p {
-    font-size: 25px;
-    text-align: center;
-}
-
-ul {
-    padding: 0;
-    text-align: center;
-}
-
-li {
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-img {
+header img {
+    border-radius: 50%;  /*Añade un borde redondeado a la imagen */
+    border-style: groove;
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
-    align-items: center;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-style: outset;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-#botonRegistro {
+#link{
     text-align: center;
 }
-
-.registro {
-
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #525252;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+section img {
+    /* Estilos específicos para la imagen del encabezado */
+    border-radius: 50%;  /* Hace que la imagen sea circular */
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centra la imagen usando margen */
 }
 
-#datosRegistrados {
-    margin-bottom: 100px; /* Ajusta el valor según sea necesario para separar el contenido del footer */
+h2 {
+    color: #007bff92;
+}
+
+h3 {
+    color: #333;
+}
+
+ol {
+    padding: 0;
+    list-style-position: inside;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    padding: 1%;
+}
+
+/* Estilos específicos para las secciones que contienen certificaciones */
+#certificados {
+    background-color: #ffffff;
+}
+
+#certificados h3 {
+    color: #3eae4b;
 }

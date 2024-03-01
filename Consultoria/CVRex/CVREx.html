@@ -1,55 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>CV</title>
-    <link rel="stylesheet" href="styles_1Rex.css">
-    <link rel="stylesheet" href="styles_2Rex.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Rex N</title>
     <link rel="stylesheet" href="stylesRex.css">
+    <link rel="shortcut icon" href="Images/RexImg.ico" />
+
 </head>
-
 <body>
+
     <header>
-        <h1> David Rex Nava García</h1>
+
+        <h1>Curriculum Vitae</h1>
+        <img src="Images/RexImg.jpeg" alt="Foto" width="200">
+        <p>Ingeniero en Sistemas ejerciendo como Data Analyst.<br/></p>
+        <p>
+            Tengo experiencia en automatizaciones, creación de procesos, simplificación de flujos de trabajo. </p>
+        <p>
+            Tengo una actitud positiva y me esfuerzo constantemente por superar los requisitos operativos.
+        </p>
     </header>
-    <main>
-        <section id="experiencia">
-            <p>Experiencia</p>
-            <ul>
-                <li>Peñafiel</li>
-                <li>Teleperformance</li>
-                <li>Marriott</li>
-            </ul>>
-        </section>
 
-        <section id="estudios">
-            <p>Ingeniería en Sistemas Computacionales - UVM</p>
-            <ul>
-                <li>Bachillerato UVM</li>
-                <li>Prueba 2</li>
-                <li>Prueba 3</li>
-            </ul>
-        </section>
+    <section id="educacion">
+        <h2>Estudios</h2>
+        <h3>Universidad del Valle de México 2020 - 2024</h3>
+        <p>Ingenieria en Sistemas Computacionales – Cursando - Octavo Semestre</p>
+        <h3>Universidad del Valle de México 2016 - 2018</h3>
+        <p>Bachillerato</p>
+    </section>
 
-        <section id="imagen">
-            <img src="Images/RexImg.jpeg" onclick="fondoParrafos()">
-        </section>
+    <section id="experiencia">
+        <h2>Experiencia</h2>
+        <h3>Data Analyst</h3>
+        <h4>Grupo Peñafiel Dic 2023 - Presente</h4>
+        <p>En esta empresa soy responsable de la recopilación, y análisis de datos sobre el personal de recursos humanos
+            para llevar seguimientos de control, para tener  de manera clara y concisa la toma de decisiones para la
+            procesos en conjunto con el equipo de nómina. <br/> 
+        </p>
+        <h3>CRM Manager</h3>
+        <h4>Smart Investment Opportunities</h4>
+        <p>En esta empresa, fui responsable de la recopilación, procesado y análisis de datos estadísticos para 
+            llevar seguimientos de control, identificación de datos para tener  de manera clara y concisa
+            la toma de decisiones para la asignación de recursos de la empresa. <br/> 
+        </p>
+        <p>
+            Utilicé herramientas tales como Power BI en conjunto con el CRM de la empresa para generar datos
+            actualizados y automatizados.
+        </p> 
+        
+    </section>
 
-        <section id="botonRegistro">
-            <button class="registro" id="MostrarFormulario">Deja tus datos</button>
-            
-            <div id="ContainterFormulario"></div>
-            <div id="datosRegistrados"></div>
-        </section>
-    </main>
-    <footer>
-        <a href="#" onclick="noStyles()">Sin Estilos</a> |
-        <a href="#" onclick="activarStyles(0)">Estilo 1</a> |
-        <a href="#" onclick="activarStyles(1)">Estilo 2</a> |
-        <a href="#" onclick="activarStyles(2)">Estilo 3</a>
-    </footer>
-    <script src="scriptRex.js"></script>
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ol>
+            <li>Conocimiento técnico (Python y SQL).</li>
+            <li>Microsoft Office.</li>
+            <li>Swift y Kotlin.</li>
+            <li>metodologías Ágiles.</li>
+        </ol>
+    </section>
+
+
+
+    <section id="software">
+        <h2>Software e Idiomas</h2>
+            <p>Python<br/>
+            Visual Studio<br/>
+            C++<br/>
+            PHP<br/>
+            CSS<br/>
+            Android Studio<br/>
+            Kotlin<br/>
+            Java<br/>
+            HTML<br/>
+            Swift</p>
+
+    </section>
+
+
+    <section id="link">
+        <h2>Links</h2>
+        <a href="https://wa.me/5587607848">
+            <img src="Images/WhatsAppLogo.webp" alt="Logo Whatsapp" width="50">
+        </a>
+    </section>
+
+    <section id="registration-form" style="display: none;">
+        <h2>Registra tus datos</h2>
+        
+        <form id="registration-form">
+            <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidoP">Apellido Paterno:</label>
+            <input type="text" id="apellidoP" name="apellidoP" required>
+
+            <label for="apellidoM">Apellido Materno:</label>
+            <input type="text" id="apellidoM" name="apellidoM" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </p>
+            <button type="submit">Registrarse</button>
+        </form>
+        
+    </section>
+
+    <section id="registered-data" style="display: none;">
+        <h2>Datos Registrados</h2>
+        <p id="display-nombre"></p>
+        <p id="display-apellidoP"></p>
+        <p id="display-apellidoM"></p>
+        <p id="display-correo"></p>
+        <p id="display-telefono"></p>
+    </section>
+    
+    <section id="botonRegistro" style="text-align: center;">
+        <button id="show-registration-btn">Click para Formulario de Registro</button>
+    </section>
+    
+    <script src="scriptRex.js"></script> <!-- Archivo JavaScript -->
+
 </body>
-
 </html>
