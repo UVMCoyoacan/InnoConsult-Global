@@ -1,0 +1,155 @@
+/* encabezado */
+header {
+  background-color: #007bff; 
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px; /* Bordes redondeados arriba y abajo */
+}
+
+#nombre {
+  color: #ffffff;
+}
+
+#subtitulo {
+  color: #ffffff;
+}
+
+/* secciones */
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 2px solid #ccc; /* Borde */
+  border-radius: 10px; /* Bordes redondeados arriba y abajo */
+  overflow: hidden;
+}
+
+/* título Datos de Contacto */
+#contacto h2 {
+  color: #007bff; 
+}
+
+/* título Educación */
+#educacion h2 {
+  color: #007bff; 
+}
+
+/* título Cursos */
+#cursos h2 {
+  color: #007bff; 
+}
+
+/* título Aptitudes */
+#aptitudes h2 {
+  color: #007bff; 
+}
+
+/* título Habilidades */
+#habilidades h2 {
+  color: #007bff; 
+}
+
+/* título Idiomas */
+#idiomas h2 {
+  color: #007bff; 
+}
+
+/* listas */
+ul {
+  padding: 0;
+}
+
+/* puntos de las listas */
+ul li {
+  list-style-type: disc; /* Puntos */
+}
+
+/* columnas de aptitudes */
+.columna {
+  float: left;
+  width: 50%;
+}
+
+/* margen izquierdo para la segunda columna de aptitudes */
+.columna ul {
+  padding-left: 20px;
+}
+
+/* párrafos idiomas */
+#idiomas p {
+  margin: 0;
+  color: #333;
+}
+
+/* Estilos para el formulario */
+#MostrarFormulario {
+  
+  background-color: #f0f0f0; /* Fondo del formulario */
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px; /* Ancho del formulario */
+  margin-bottom: 20px; /* Espacio entre el formulario y los datos registrados */
+  align-content: center;
+}
+
+boton{
+  text-align: left;
+  
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Espacio entre el botón y el formulario */
+}
+
+
+#formularioRegistro label {
+  color: #007bff; /* Color del título */
+  text-align: left; 
+}
+
+#datosRegistrados {
+  text-align: center;
+}
+
+#registroForm label {
+  font-weight: bold; /* Etiquetas en negrita */
+}
+
+#registroForm input[type="text"] {
+  width: calc(100% - 20px); /* Ancho del campo de entrada */
+  padding: 10px; /* Espaciado dentro del campo de entrada */
+  margin-bottom: 10px; /* Espacio entre los campos de entrada */
+}
+
+#registroForm input[type="submit"] {
+  text-align: center;
+  background-color: green; /* Fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado dentro del botón */
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer;
+}
+
+#registroForm input[type="submit"]:hover {
+  background-color: darkgreen; /* Cambio de color al pasar el ratón sobre el botón */
+}
+
+/* Estilos para los datos registrados */
+#datosRegistrados {
+  color: #050000;
+  background-color: #f0f0f0; /* Fondo de los datos registrados */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px; /* Ancho de los datos registrados */
+}
+
+#datosRegistrados h2 {
+  color: #007bff; /* Color del título */
+}
+
+#datosRegistrados p {
+  font-weight: bold; /* Etiquetas en negrita */
+}
