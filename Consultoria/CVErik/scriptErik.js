@@ -31,11 +31,11 @@ function activarStyles(n) {
 }
 
 function mostrarFormulario() {
-    var containerFormulario = document.getElementById('ContainterFormulario'); // Corregido el ID
+    var containerFormulario = document.getElementById('ContainterFormulario');
     containerFormulario.innerHTML = `
     <div id="formularioRegistro">
       <h2>Registro</h2>
-      <form id="registroForm"> <!-- Agregamos un ID al formulario -->
+      <form id="registroForm">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br><br>
         
@@ -50,20 +50,17 @@ function mostrarFormulario() {
       </form>
     </div>
     `;
-    // Agregamos el evento de envío al formulario
     document.getElementById('registroForm').addEventListener('submit', mostrarDatosRegistrados);
 }
 
 document.getElementById('MostrarFormulario').addEventListener('click', mostrarFormulario); // Ajustado el ID del botón
 
 function mostrarDatosRegistrados(event) {
-    event.preventDefault(); // Prevenimos el envío del formulario para manejarlo manualmente
+    event.preventDefault(); 
     
-    // Capturamos los valores de los campos del formulario
     var nombre = document.getElementById('nombre').value;
     var email = document.getElementById('email').value;
     
-    // Mostramos los datos capturados en algún lugar de la página
     var datosRegistrados = document.getElementById('datosRegistrados');
     datosRegistrados.innerHTML = `
     <h2>Datos Registrados:</h2>
