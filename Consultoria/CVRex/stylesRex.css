@@ -74,5 +74,21 @@ p {
 }
 
 #certificados h3 {
-    color: #3eae4b;
+    color: #818181;
 }
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #858585;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #838383;
+}
+
