@@ -53,3 +53,42 @@ footer a {
 #datosRegistrados {
     margin-bottom: 100px; /* Ajusta el valor según sea necesario para separar el contenido del footer */
 }
+
+
+#datosRegistrados {
+    margin-bottom: 100px; 
+}
+
+#formularioRegistro {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+#registroForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#registroForm input[type="text"],
+#registroForm input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#registroForm input[type="submit"] {
+    width: 100%;
+    background-color: #9b9b9b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#registroForm input[type="submit"]:hover {
+    background-color: #929292;
+}
